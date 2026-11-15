@@ -22,7 +22,6 @@ Tujuannya adalah membandingkan performa deteksi dan penghitungan objek (`person`
 - [Perbedaan Baseline vs Optimasi](#perbedaan-baseline-vs-optimasi)
 - [Metrik yang Diukur](#metrik-yang-diukur)
 - [Output yang Dihasilkan](#output-yang-dihasilkan)
-- [Catatan Penting & Troubleshooting](#catatan-penting--troubleshooting)
 - [Referensi](#referensi)
 
 ---
