@@ -214,19 +214,6 @@ counting_simulation.png
 
 ---
 
-## Catatan Penting & Troubleshooting
-
-- **`FileNotFoundError`** — nama folder di Google Drive bersifat case-sensitive. Cocokkan `DATASET_DIR`/`DATASET_ROOT` persis dengan struktur Drive.
-- **`CUDA out of memory`** — turunkan batch size. EfficientDet: hapus nilai besar dari `BATCH_SIZE_CANDIDATES`. YOLO: turunkan `batch`.
-- **Tuning berjalan tanpa disadari** — `RUN_HYPERPARAMETER_TUNING = True` di notebook YOLO optimasi, meskipun komentar di sebelahnya menulis “ubah ke True untuk menjalankan tuning”.
-- **Label EfficientDet berbasis 1** (bukan 0). Mapping kelas dicetak otomatis saat dataset dimuat; jangan mengasumsikan urutannya sama dengan YOLO.
-- **EfficientDet tidak melakukan resize** — gambar ditempel ke kanvas 640×640 di pojok kiri-atas, sehingga input harus sudah 640×640.
-- **Jangan rename file notebook** — nama dengan garis bawah/tanpa garis bawah (`Baseline_`, `Optimasi_`) sudah dipakai konsisten di laporan.
-- **File notebook besar** — setiap `.ipynb` adalah satu baris JSON raksasa berisi output base64. Edit lewat JSON/`nbformat`, jangan manual.
-- Untuk panduan teknis bagi kontributor/agen, lihat [`AGENTS.md`](AGENTS.md).
-
----
-
 ## Referensi
 
 - [Ultralytics YOLOv8](https://docs.ultralytics.com/)
